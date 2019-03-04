@@ -7,7 +7,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    background: #E0E0E0;
+    background: white;
 }
 
 
@@ -72,7 +72,7 @@ nav li a:hover{
 /* === Content ==========*/
 .content{
     grid-area: content;
-    background:  url('../img/background.png') no-repeat;
+    background: #E0E0E0 url('../img/background.png') no-repeat center;
     /* no-repeat center center/cover */
 }
 
@@ -118,18 +118,24 @@ nav li a:hover{
 /* === Footer ==========*/
 .footer{
     grid-area: footer;
-    background:#fff;
+    background:white;
 }
 
-.footer p{
-    text-align: right;
+.footer ul{
+    display: flex;
+    justify-content: center;
 }
 
-.footer p a {
-    text-decoration: none;
-    margin-right: 10px;
-    color: #060626;
+.footer ul li{
+    list-style: none;
 }
+
+.footer ul li a{
+    color:#333;
+    padding: 1em;
+}
+
+
 /*./=== Footer ==========*/
 
 @media(min-width:1040px){
@@ -164,7 +170,7 @@ nav li a:hover{
     }
 
     .content{
-        background:  url('../img/background.png') no-repeat no-repeat center center/cover;
+        background: #E0E0E0 url('../img/background.png') no-repeat center;
     }
 
     .hero-content{
@@ -172,12 +178,12 @@ nav li a:hover{
     }
 
     .hero img{
-        width: 300px;
+        width: 250px;
         float:right;
     }
 
     .hero h1{
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     .hero p{
